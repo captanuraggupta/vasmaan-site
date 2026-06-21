@@ -69,8 +69,8 @@ nav {
 .hero-stats { display:flex;gap:36px;padding-top:28px;border-top:1px solid var(--border); }
 .stat-val   { font-family:'Poppins',sans-serif;font-size:1.85rem;font-weight:800;color:var(--orange);line-height:1; }
 .stat-label { font-size:0.73rem;color:var(--muted);margin-top:4px; }
-.hero-cards { position:relative;height:430px; }
-.hcard { position:absolute;background:#fff;border-radius:16px;border:1px solid var(--border);padding:18px 20px;box-shadow:0 4px 24px rgba(0,0,0,0.07);transition:transform 0.3s; }
+.hero-cards { display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:center; }
+.hcard { position:relative;background:#fff;border-radius:16px;border:1px solid var(--border);padding:18px 20px;box-shadow:0 4px 24px rgba(0,0,0,0.07);transition:transform 0.3s; }
 .hcard:hover { transform:translateY(-4px); }
 .hcard-icon { font-size:1.55rem;margin-bottom:8px; }
 .hcard-title { font-family:'Poppins',sans-serif;font-size:0.84rem;font-weight:700;color:var(--text); }
@@ -79,10 +79,8 @@ nav {
 .badge-o  { background:var(--orange-lt);color:var(--orange); }
 .badge-g  { background:var(--green-lt);color:var(--green); }
 .badge-bg { background:var(--batva-glt);color:var(--batva-g); }
-.hc1{top:0;left:0;width:188px;} .hc2{top:10px;right:0;width:198px;}
-.hc3{top:48%;left:18px;transform:translateY(-50%);width:184px;}
-.hc4{top:48%;right:0;transform:translateY(-50%);width:193px;}
-.hc5{bottom:0;left:50%;transform:translateX(-50%);width:208px;}
+.hc1,.hc2,.hc3,.hc4,.hc5{width:auto;top:auto;left:auto;right:auto;bottom:auto;transform:none;}
+.hc5{grid-column:1 / -1;}
 
 /* SECTION BASE */
 section { padding: 88px 5%; }
@@ -265,7 +263,7 @@ footer{background:#1C1C2E;color:rgba(255,255,255,0.42);padding:58px 5% 26px;}
   <div class="hero-blob1"></div><div class="hero-blob2"></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-eyebrow"><span class="pulse-dot"></span> B2B &amp; B2C Tech Solutions</div>
+      <div class="hero-eyebrow"><span class="pulse-dot"></span> Building in India, for India</div>
       <h1>Technology that <span class="h-o">works</span> for every <span class="h-g">business</span> &amp; every person</h1>
       <p>Whether you are a corporation needing an enterprise platform, or an individual wanting a smarter digital tool — Vasmaan builds web-based solutions that actually solve the problem.</p>
       <div class="hero-btns">
@@ -281,7 +279,7 @@ footer{background:#1C1C2E;color:rgba(255,255,255,0.42);padding:58px 5% 26px;}
     <div class="hero-cards">
       <div class="hcard hc1"><div class="hcard-icon">🚢</div><div class="hcard-title">Shipping Portal</div><div class="hcard-sub">Fleet &amp; Compliance</div><span class="hcard-badge badge-o">B2B</span></div>
       <div class="hcard hc2"><div class="hcard-icon">💰</div><div class="hcard-title">Finance ERP</div><div class="hcard-sub">Accounts &amp; Billing</div><span class="hcard-badge badge-o">B2B</span></div>
-      <div class="hcard hc3"><div class="hcard-icon">📈</div><div class="hcard-title">Batva</div><div class="hcard-sub">Net Worth Tracker</div><span class="hcard-badge badge-bg">Coming Soon</span></div>
+      <div class="hcard hc3"><div class="hcard-icon"><img src="https://batva.in/static/mm-logo-main.png" alt="Batva" style="height:34px;width:auto;display:block"></div><div class="hcard-title">Batva</div><div class="hcard-sub">Net Worth Tracker</div><span class="hcard-badge badge-bg">Coming Soon</span></div>
       <div class="hcard hc4"><div class="hcard-icon">🛒</div><div class="hcard-title">E-Commerce</div><div class="hcard-sub">Marketplace &amp; Retail</div><span class="hcard-badge badge-o">B2B+B2C</span></div>
       <div class="hcard hc5"><div class="hcard-icon">📊</div><div class="hcard-title">CSR Dashboard</div><div class="hcard-sub">NGO &amp; Compliance</div><span class="hcard-badge badge-o">B2B</span></div>
     </div>
